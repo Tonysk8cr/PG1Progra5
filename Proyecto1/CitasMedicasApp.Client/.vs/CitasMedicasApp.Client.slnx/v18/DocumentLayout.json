@@ -1,0 +1,266 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{52B27DF4-B4E3-C57C-C45E-35CA81DD175F}|CitasMedicasApp.Client\\CitasMedicasApp.Client.csproj|c:\\users\\tonyi\\onedrive - universidad hispanoamericana\\universidad\\vi cuatri\\prograv\\proyecto\\proyecto1\\citasmedicasapp.client\\citasmedicasapp.client\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{52B27DF4-B4E3-C57C-C45E-35CA81DD175F}|CitasMedicasApp.Client\\CitasMedicasApp.Client.csproj|solutionrelative:citasmedicasapp.client\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52B27DF4-B4E3-C57C-C45E-35CA81DD175F}|CitasMedicasApp.Client\\CitasMedicasApp.Client.csproj|c:\\users\\tonyi\\onedrive - universidad hispanoamericana\\universidad\\vi cuatri\\prograv\\proyecto\\proyecto1\\citasmedicasapp.client\\citasmedicasapp.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52B27DF4-B4E3-C57C-C45E-35CA81DD175F}|CitasMedicasApp.Client\\CitasMedicasApp.Client.csproj|solutionrelative:citasmedicasapp.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89D18730-9EDD-9B44-DCDC-1F7A8208411F}|AppCitasMedicas.Entities\\AppCitasMedicas.Entities.csproj|c:\\users\\tonyi\\onedrive - universidad hispanoamericana\\universidad\\vi cuatri\\prograv\\proyecto\\proyecto1\\citasmedicasapp.client\\appcitasmedicas.entities\\vwcitasdetalle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89D18730-9EDD-9B44-DCDC-1F7A8208411F}|AppCitasMedicas.Entities\\AppCitasMedicas.Entities.csproj|solutionrelative:appcitasmedicas.entities\\vwcitasdetalle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89D18730-9EDD-9B44-DCDC-1F7A8208411F}|AppCitasMedicas.Entities\\AppCitasMedicas.Entities.csproj|c:\\users\\tonyi\\onedrive - universidad hispanoamericana\\universidad\\vi cuatri\\prograv\\proyecto\\proyecto1\\citasmedicasapp.client\\appcitasmedicas.entities\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89D18730-9EDD-9B44-DCDC-1F7A8208411F}|AppCitasMedicas.Entities\\AppCitasMedicas.Entities.csproj|solutionrelative:appcitasmedicas.entities\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89D18730-9EDD-9B44-DCDC-1F7A8208411F}|AppCitasMedicas.Entities\\AppCitasMedicas.Entities.csproj|c:\\users\\tonyi\\onedrive - universidad hispanoamericana\\universidad\\vi cuatri\\prograv\\proyecto\\proyecto1\\citasmedicasapp.client\\appcitasmedicas.entities\\especialidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89D18730-9EDD-9B44-DCDC-1F7A8208411F}|AppCitasMedicas.Entities\\AppCitasMedicas.Entities.csproj|solutionrelative:appcitasmedicas.entities\\especialidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89D18730-9EDD-9B44-DCDC-1F7A8208411F}|AppCitasMedicas.Entities\\AppCitasMedicas.Entities.csproj|c:\\users\\tonyi\\onedrive - universidad hispanoamericana\\universidad\\vi cuatri\\prograv\\proyecto\\proyecto1\\citasmedicasapp.client\\appcitasmedicas.entities\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89D18730-9EDD-9B44-DCDC-1F7A8208411F}|AppCitasMedicas.Entities\\AppCitasMedicas.Entities.csproj|solutionrelative:appcitasmedicas.entities\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89D18730-9EDD-9B44-DCDC-1F7A8208411F}|AppCitasMedicas.Entities\\AppCitasMedicas.Entities.csproj|c:\\users\\tonyi\\onedrive - universidad hispanoamericana\\universidad\\vi cuatri\\prograv\\proyecto\\proyecto1\\citasmedicasapp.client\\appcitasmedicas.entities\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89D18730-9EDD-9B44-DCDC-1F7A8208411F}|AppCitasMedicas.Entities\\AppCitasMedicas.Entities.csproj|solutionrelative:appcitasmedicas.entities\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89D18730-9EDD-9B44-DCDC-1F7A8208411F}|AppCitasMedicas.Entities\\AppCitasMedicas.Entities.csproj|c:\\users\\tonyi\\onedrive - universidad hispanoamericana\\universidad\\vi cuatri\\prograv\\proyecto\\proyecto1\\citasmedicasapp.client\\appcitasmedicas.entities\\citum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89D18730-9EDD-9B44-DCDC-1F7A8208411F}|AppCitasMedicas.Entities\\AppCitasMedicas.Entities.csproj|solutionrelative:appcitasmedicas.entities\\citum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28C3BD35-75A1-9EAC-E954-B1D876A1361B}|AppCitasMedicas.AccesoDatos\\AppCitasMedicas.AccesoDatos.csproj|c:\\users\\tonyi\\onedrive - universidad hispanoamericana\\universidad\\vi cuatri\\prograv\\proyecto\\proyecto1\\citasmedicasapp.client\\appcitasmedicas.accesodatos\\models\\citasmedicascontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28C3BD35-75A1-9EAC-E954-B1D876A1361B}|AppCitasMedicas.AccesoDatos\\AppCitasMedicas.AccesoDatos.csproj|solutionrelative:appcitasmedicas.accesodatos\\models\\citasmedicascontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52B27DF4-B4E3-C57C-C45E-35CA81DD175F}|CitasMedicasApp.Client\\CitasMedicasApp.Client.csproj|c:\\users\\tonyi\\onedrive - universidad hispanoamericana\\universidad\\vi cuatri\\prograv\\proyecto\\proyecto1\\citasmedicasapp.client\\citasmedicasapp.client\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52B27DF4-B4E3-C57C-C45E-35CA81DD175F}|CitasMedicasApp.Client\\CitasMedicasApp.Client.csproj|solutionrelative:citasmedicasapp.client\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89D18730-9EDD-9B44-DCDC-1F7A8208411F}|AppCitasMedicas.Entities\\AppCitasMedicas.Entities.csproj|c:\\users\\tonyi\\onedrive - universidad hispanoamericana\\universidad\\vi cuatri\\prograv\\proyecto\\proyecto1\\citasmedicasapp.client\\appcitasmedicas.entities\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89D18730-9EDD-9B44-DCDC-1F7A8208411F}|AppCitasMedicas.Entities\\AppCitasMedicas.Entities.csproj|solutionrelative:appcitasmedicas.entities\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9E869B0-13E1-BB84-090B-A44DB24B0F0E}|AppCitasMedicas.DTO\\AppCitasMedicas.DTO.csproj|c:\\users\\tonyi\\onedrive - universidad hispanoamericana\\universidad\\vi cuatri\\prograv\\proyecto\\proyecto1\\citasmedicasapp.client\\appcitasmedicas.dto\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9E869B0-13E1-BB84-090B-A44DB24B0F0E}|AppCitasMedicas.DTO\\AppCitasMedicas.DTO.csproj|solutionrelative:appcitasmedicas.dto\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03891656-1E88-8F28-F515-8636117D23C0}|AppCitasMedicas.Negocio\\AppCitasMedicas.Negocio.csproj|c:\\users\\tonyi\\onedrive - universidad hispanoamericana\\universidad\\vi cuatri\\prograv\\proyecto\\proyecto1\\citasmedicasapp.client\\appcitasmedicas.negocio\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03891656-1E88-8F28-F515-8636117D23C0}|AppCitasMedicas.Negocio\\AppCitasMedicas.Negocio.csproj|solutionrelative:appcitasmedicas.negocio\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74DB9D33-7839-22C6-000B-B2EB88E6025A}|AppCitasMedicas.Repositorio\\AppCitasMedicas.Repositorio.csproj|c:\\users\\tonyi\\onedrive - universidad hispanoamericana\\universidad\\vi cuatri\\prograv\\proyecto\\proyecto1\\citasmedicasapp.client\\appcitasmedicas.repositorio\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74DB9D33-7839-22C6-000B-B2EB88E6025A}|AppCitasMedicas.Repositorio\\AppCitasMedicas.Repositorio.csproj|solutionrelative:appcitasmedicas.repositorio\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28C3BD35-75A1-9EAC-E954-B1D876A1361B}|AppCitasMedicas.AccesoDatos\\AppCitasMedicas.AccesoDatos.csproj|c:\\users\\tonyi\\onedrive - universidad hispanoamericana\\universidad\\vi cuatri\\prograv\\proyecto\\proyecto1\\citasmedicasapp.client\\appcitasmedicas.accesodatos\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28C3BD35-75A1-9EAC-E954-B1D876A1361B}|AppCitasMedicas.AccesoDatos\\AppCitasMedicas.AccesoDatos.csproj|solutionrelative:appcitasmedicas.accesodatos\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\CitasMedicasApp.Client\\appsettings.json",
+              "RelativeDocumentMoniker": "CitasMedicasApp.Client\\appsettings.json",
+              "ToolTip": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\CitasMedicasApp.Client\\appsettings.json",
+              "RelativeToolTip": "CitasMedicasApp.Client\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-09T00:10:47.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\CitasMedicasApp.Client\\Program.cs",
+              "RelativeDocumentMoniker": "CitasMedicasApp.Client\\Program.cs",
+              "ToolTip": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\CitasMedicasApp.Client\\Program.cs",
+              "RelativeToolTip": "CitasMedicasApp.Client\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T23:57:45.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VwCitasDetalle.cs",
+              "DocumentMoniker": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.Entities\\VwCitasDetalle.cs",
+              "RelativeDocumentMoniker": "AppCitasMedicas.Entities\\VwCitasDetalle.cs",
+              "ToolTip": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.Entities\\VwCitasDetalle.cs",
+              "RelativeToolTip": "AppCitasMedicas.Entities\\VwCitasDetalle.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA7wB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T23:56:30.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Paciente.cs",
+              "DocumentMoniker": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.Entities\\Paciente.cs",
+              "RelativeDocumentMoniker": "AppCitasMedicas.Entities\\Paciente.cs",
+              "ToolTip": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.Entities\\Paciente.cs",
+              "RelativeToolTip": "AppCitasMedicas.Entities\\Paciente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T23:56:26.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Especialidad.cs",
+              "DocumentMoniker": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.Entities\\Especialidad.cs",
+              "RelativeDocumentMoniker": "AppCitasMedicas.Entities\\Especialidad.cs",
+              "ToolTip": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.Entities\\Especialidad.cs",
+              "RelativeToolTip": "AppCitasMedicas.Entities\\Especialidad.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T23:56:21.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.Entities\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "AppCitasMedicas.Entities\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.Entities\\ErrorViewModel.cs",
+              "RelativeToolTip": "AppCitasMedicas.Entities\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T23:55:43.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.Entities\\Doctor.cs",
+              "RelativeDocumentMoniker": "AppCitasMedicas.Entities\\Doctor.cs",
+              "ToolTip": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.Entities\\Doctor.cs",
+              "RelativeToolTip": "AppCitasMedicas.Entities\\Doctor.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA1wAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T23:55:56.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Citum.cs",
+              "DocumentMoniker": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.Entities\\Citum.cs",
+              "RelativeDocumentMoniker": "AppCitasMedicas.Entities\\Citum.cs",
+              "ToolTip": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.Entities\\Citum.cs",
+              "RelativeToolTip": "AppCitasMedicas.Entities\\Citum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T23:54:29.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CitasMedicasContext.cs",
+              "DocumentMoniker": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.AccesoDatos\\Models\\CitasMedicasContext.cs",
+              "RelativeDocumentMoniker": "AppCitasMedicas.AccesoDatos\\Models\\CitasMedicasContext.cs",
+              "ToolTip": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.AccesoDatos\\Models\\CitasMedicasContext.cs",
+              "RelativeToolTip": "AppCitasMedicas.AccesoDatos\\Models\\CitasMedicasContext.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowHsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T23:48:17.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\CitasMedicasApp.Client\\Models\\Doctor.cs",
+              "RelativeDocumentMoniker": "CitasMedicasApp.Client\\Models\\Doctor.cs",
+              "ToolTip": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\CitasMedicasApp.Client\\Models\\Doctor.cs",
+              "RelativeToolTip": "CitasMedicasApp.Client\\Models\\Doctor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T23:43:19.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.Entities\\Class1.cs",
+              "RelativeDocumentMoniker": "AppCitasMedicas.Entities\\Class1.cs",
+              "ToolTip": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.Entities\\Class1.cs",
+              "RelativeToolTip": "AppCitasMedicas.Entities\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T23:15:26.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.DTO\\Class1.cs",
+              "RelativeDocumentMoniker": "AppCitasMedicas.DTO\\Class1.cs",
+              "ToolTip": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.DTO\\Class1.cs",
+              "RelativeToolTip": "AppCitasMedicas.DTO\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T23:17:09.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.Negocio\\Class1.cs",
+              "RelativeDocumentMoniker": "AppCitasMedicas.Negocio\\Class1.cs",
+              "ToolTip": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.Negocio\\Class1.cs",
+              "RelativeToolTip": "AppCitasMedicas.Negocio\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T23:16:34.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.Repositorio\\Class1.cs",
+              "RelativeDocumentMoniker": "AppCitasMedicas.Repositorio\\Class1.cs",
+              "ToolTip": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.Repositorio\\Class1.cs",
+              "RelativeToolTip": "AppCitasMedicas.Repositorio\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T23:15:50.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.AccesoDatos\\Class1.cs",
+              "RelativeDocumentMoniker": "AppCitasMedicas.AccesoDatos\\Class1.cs",
+              "ToolTip": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.AccesoDatos\\Class1.cs",
+              "RelativeToolTip": "AppCitasMedicas.AccesoDatos\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T23:15:04.643Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

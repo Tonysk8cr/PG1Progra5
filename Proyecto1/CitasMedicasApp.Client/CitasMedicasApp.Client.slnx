@@ -1,0 +1,19 @@
+<Solution>
+  <Folder Name="/01.CapaAccesoDatos/">
+    <Project Path="AppCitasMedicas.AccesoDatos/AppCitasMedicas.AccesoDatos.csproj" />
+    <Project Path="AppCitasMedicas.Entities/AppCitasMedicas.Entities.csproj" />
+    <Project Path="AppCitasMedicas.Repositorio/AppCitasMedicas.Repositorio.csproj" />
+  </Folder>
+  <Folder Name="/02.CapaNegocio/">
+    <Project Path="AppCitasMedicas.Negocio/AppCitasMedicas.Negocio.csproj" />
+  </Folder>
+  <Folder Name="/03.CapaTransversal/">
+    <Project Path="AppCitasMedicas.DTO/AppCitasMedicas.DTO.csproj" />
+  </Folder>
+  <Folder Name="/04.CapaServidor/">
+    <Project Path="AppCitasMedicas.API/AppCitasMedicas.API.csproj" />
+  </Folder>
+  <Folder Name="/05.CapaCliente/">
+    <Project Path="CitasMedicasApp.Client/CitasMedicasApp.Client.csproj" />
+  </Folder>
+</Solution>
