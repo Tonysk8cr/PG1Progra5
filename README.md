@@ -91,7 +91,7 @@ Reemplazá `TU_SERVIDOR_AQUÍ` por el nombre o instancia de SQL Server de tu com
 * Durán Díaz Dilan Alexis [@ddurandiaz3d](https://github.com/ddurandiaz3d)
 * Fallas Calderón Yudi Mariel [@yfallas02](https://github.com/yfallas02)
 * Fonseca Chinchilla Santiago [@Siggy1604](https://github.com/Siggy1604)
-* Rodríguez Coronado Camila de los Ángeles
+* Rodríguez Coronado Camila de los Ángeles [Cami02rc](https://github.com/Cami02rc)
 * Villalobos Hidalgo Anthony Emanuel [@Tonysk8cr](https://github.com/Tonysk8cr)
 
 ## Profesor a cargo
