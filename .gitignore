@@ -1,2 +1,12 @@
 Proyecto1/Proyecto_Citas_Medicas.pdf
 
+# Visual Studio
+.vs/
+
+**/. vs/
+
+
+# Build output
+**/obj/
+**/bin/
+
