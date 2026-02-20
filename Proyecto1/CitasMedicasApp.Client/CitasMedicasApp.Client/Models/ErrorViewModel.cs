@@ -1,4 +1,4 @@
-namespace CitasMedicasApp.Client.Models
+namespace AppCitasMedicas.Client.Models
 {
     public class ErrorViewModel
     {

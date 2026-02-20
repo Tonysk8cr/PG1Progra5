@@ -13,6 +13,8 @@ namespace AppCitasMedicas.DTO.Response.Doctor
 
         public int EspecialidadId { get; set; }
 
+        public string? EspecialidadNombre { get; set; }
+
         public string? Telefono { get; set; }
 
         public string? Email { get; set; }

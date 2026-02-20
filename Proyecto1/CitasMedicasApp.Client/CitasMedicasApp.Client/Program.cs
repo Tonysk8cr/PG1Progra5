@@ -1,13 +1,4 @@
-using AppCitasMedicas.AccesoDatos.Models;
-using Microsoft.EntityFrameworkCore;
-
 var builder = WebApplication.CreateBuilder(args);
-
-
-builder.Services.AddDbContext<CitasMedicasContext>(opt =>
-{
-    opt.UseSqlServer(builder.Configuration.GetConnectionString("CitasMedicasDB"));
-});
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CitasMedicasApp.Client.Models;
+namespace AppCitasMedicas.Client.Models;
 
 public partial class Doctor
 {

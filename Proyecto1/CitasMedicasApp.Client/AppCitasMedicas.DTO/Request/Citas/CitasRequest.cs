@@ -2,10 +2,20 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AppCitasMedicas.DTO.Response.Citas
+namespace AppCitasMedicas.DTO.Request.Citas
 {
-    internal class CitasResponse
+    public class CitasRequest
     {
+        public int PacienteId { get; set; }
+
+        public int DoctorId { get; set; }
+
+        public DateOnly FechaCita { get; set; }
+
+        public TimeOnly HoraCita { get; set; }
+
+        public string? Motivo { get; set; }
     }
 }
+
 

@@ -1,11 +1,15 @@
-﻿using System;
+﻿using AppCitasMedicas.Entities;
 using System.Collections.Generic;
-using System.Text;
+using System.Threading.Tasks;
 
-namespace AppCitasMedicas.Repositorio.Implementaciones
+namespace AppCitasMedicas.Repositorio.Interfaces
 {
-    internal class ICitasRepositorio
+    public interface ICitasRepositorio
     {
+        Task<List<Citum>> Listar();
+        Task<Citum?> ObtenerPorId(int id);
+        Task<bool> Crear(Citum entidad);
+        Task<bool> Actualizar(Citum entidad);
+        Task<bool> Eliminar(int id);
     }
 }
-

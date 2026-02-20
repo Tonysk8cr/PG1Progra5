@@ -11,3 +11,16 @@ C:\Users\tonyi\OneDrive - Universidad Hispanoamericana\Universidad\VI Cuatri\Pro
 C:\Users\tonyi\OneDrive - Universidad Hispanoamericana\Universidad\VI Cuatri\PrograV\Proyecto\Proyecto1\CitasMedicasApp.Client\AppCitasMedicas.Entities\obj\Debug\net10.0\refint\AppCitasMedicas.Entities.dll
 C:\Users\tonyi\OneDrive - Universidad Hispanoamericana\Universidad\VI Cuatri\PrograV\Proyecto\Proyecto1\CitasMedicasApp.Client\AppCitasMedicas.Entities\obj\Debug\net10.0\AppCitasMedicas.Entities.pdb
 C:\Users\tonyi\OneDrive - Universidad Hispanoamericana\Universidad\VI Cuatri\PrograV\Proyecto\Proyecto1\CitasMedicasApp.Client\AppCitasMedicas.Entities\obj\Debug\net10.0\ref\AppCitasMedicas.Entities.dll
+C:\Users\santi\OneDrive\Documents\GitHub\PG1Progra5\Proyecto1\CitasMedicasApp.Client\AppCitasMedicas.Entities\bin\Debug\net10.0\AppCitasMedicas.Entities.deps.json
+C:\Users\santi\OneDrive\Documents\GitHub\PG1Progra5\Proyecto1\CitasMedicasApp.Client\AppCitasMedicas.Entities\bin\Debug\net10.0\AppCitasMedicas.Entities.dll
+C:\Users\santi\OneDrive\Documents\GitHub\PG1Progra5\Proyecto1\CitasMedicasApp.Client\AppCitasMedicas.Entities\bin\Debug\net10.0\AppCitasMedicas.Entities.pdb
+C:\Users\santi\OneDrive\Documents\GitHub\PG1Progra5\Proyecto1\CitasMedicasApp.Client\AppCitasMedicas.Entities\obj\Debug\net10.0\AppCitasMedicas.Entities.csproj.AssemblyReference.cache
+C:\Users\santi\OneDrive\Documents\GitHub\PG1Progra5\Proyecto1\CitasMedicasApp.Client\AppCitasMedicas.Entities\obj\Debug\net10.0\AppCitasMedicas.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\santi\OneDrive\Documents\GitHub\PG1Progra5\Proyecto1\CitasMedicasApp.Client\AppCitasMedicas.Entities\obj\Debug\net10.0\AppCitasMedicas.Entities.AssemblyInfoInputs.cache
+C:\Users\santi\OneDrive\Documents\GitHub\PG1Progra5\Proyecto1\CitasMedicasApp.Client\AppCitasMedicas.Entities\obj\Debug\net10.0\AppCitasMedicas.Entities.AssemblyInfo.cs
+C:\Users\santi\OneDrive\Documents\GitHub\PG1Progra5\Proyecto1\CitasMedicasApp.Client\AppCitasMedicas.Entities\obj\Debug\net10.0\AppCitasMedicas.Entities.csproj.CoreCompileInputs.cache
+C:\Users\santi\OneDrive\Documents\GitHub\PG1Progra5\Proyecto1\CitasMedicasApp.Client\AppCitasMedicas.Entities\obj\Debug\net10.0\AppCitasMedicas.Entities.sourcelink.json
+C:\Users\santi\OneDrive\Documents\GitHub\PG1Progra5\Proyecto1\CitasMedicasApp.Client\AppCitasMedicas.Entities\obj\Debug\net10.0\AppCitasMedicas.Entities.dll
+C:\Users\santi\OneDrive\Documents\GitHub\PG1Progra5\Proyecto1\CitasMedicasApp.Client\AppCitasMedicas.Entities\obj\Debug\net10.0\refint\AppCitasMedicas.Entities.dll
+C:\Users\santi\OneDrive\Documents\GitHub\PG1Progra5\Proyecto1\CitasMedicasApp.Client\AppCitasMedicas.Entities\obj\Debug\net10.0\AppCitasMedicas.Entities.pdb
+C:\Users\santi\OneDrive\Documents\GitHub\PG1Progra5\Proyecto1\CitasMedicasApp.Client\AppCitasMedicas.Entities\obj\Debug\net10.0\ref\AppCitasMedicas.Entities.dll

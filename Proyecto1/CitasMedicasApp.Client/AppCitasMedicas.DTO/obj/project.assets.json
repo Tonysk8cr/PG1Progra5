@@ -8,23 +8,23 @@
     "net10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\tonyi\\.nuget\\packages\\": {},
+    "C:\\Users\\santi\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.DTO\\AppCitasMedicas.DTO.csproj",
+      "projectUniqueName": "C:\\Users\\santi\\OneDrive\\Documents\\GitHub\\PG1Progra5\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.DTO\\AppCitasMedicas.DTO.csproj",
       "projectName": "AppCitasMedicas.DTO",
-      "projectPath": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.DTO\\AppCitasMedicas.DTO.csproj",
-      "packagesPath": "C:\\Users\\tonyi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tonyi\\OneDrive - Universidad Hispanoamericana\\Universidad\\VI Cuatri\\PrograV\\Proyecto\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.DTO\\obj\\",
+      "projectPath": "C:\\Users\\santi\\OneDrive\\Documents\\GitHub\\PG1Progra5\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.DTO\\AppCitasMedicas.DTO.csproj",
+      "packagesPath": "C:\\Users\\santi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\santi\\OneDrive\\Documents\\GitHub\\PG1Progra5\\Proyecto1\\CitasMedicasApp.Client\\AppCitasMedicas.DTO\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\tonyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\santi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -73,7 +73,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AppCitasMedicas.DTO.Request.Citas
 {
-    public class CitaUpdateRequest
+    public class CitasUpdateRequest
     {
         public int PacienteId { get; set; }
 

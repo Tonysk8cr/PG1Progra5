@@ -1,8 +1,8 @@
 using System.Diagnostics;
-using CitasMedicasApp.Client.Models;
+using AppCitasMedicas.Client.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CitasMedicasApp.Client.Controllers
+namespace AppCitasMedicas.Client.Controllers
 {
     public class HomeController : Controller
     {

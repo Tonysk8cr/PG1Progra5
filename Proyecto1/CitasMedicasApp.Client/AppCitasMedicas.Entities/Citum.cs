@@ -23,5 +23,5 @@ public partial class Citum
 
     public virtual Doctor Doctor { get; set; } = null!;
 
-    public virtual Paciente Paciente { get; set; } = null!;
+    public virtual Pacientes Paciente { get; set; } = null!;
 }

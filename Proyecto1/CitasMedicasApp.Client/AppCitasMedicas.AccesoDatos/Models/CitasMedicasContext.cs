@@ -22,7 +22,7 @@ public partial class CitasMedicasContext : DbContext
 
     public virtual DbSet<Especialidad> Especialidads { get; set; }
 
-    public virtual DbSet<Paciente> Pacientes { get; set; }
+    public virtual DbSet<Pacientes> Pacientes { get; set; }
 
     public virtual DbSet<VwCitasDetalle> VwCitasDetalles { get; set; }
 
@@ -91,9 +91,11 @@ public partial class CitasMedicasContext : DbContext
             entity.Property(e => e.Nombre).HasMaxLength(100);
         });
 
-        modelBuilder.Entity<Paciente>(entity =>
+        modelBuilder.Entity<Pacientes>(entity =>
         {
             entity.ToTable("Paciente");
+            //19 2 2026 SFCH
+            entity.HasKey(e => e.PacienteId);
 
             entity.Property(e => e.Activo).HasDefaultValue(true, "DF_Paciente_Activo");
             entity.Property(e => e.Email).HasMaxLength(150);

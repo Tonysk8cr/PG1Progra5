@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
@@ -7,11 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\AppCitasMedicas.AccesoDatos\AppCitasMedicas.AccesoDatos.csproj" />
+    <ProjectReference Include="..\AppCitasMedicas.Entities\AppCitasMedicas.Entities.csproj" />
     <ProjectReference Include="..\AppCitasMedicas.Negocio\AppCitasMedicas.Negocio.csproj" />
     <ProjectReference Include="..\AppCitasMedicas.Repositorio\AppCitasMedicas.Repositorio.csproj" />
   </ItemGroup>
