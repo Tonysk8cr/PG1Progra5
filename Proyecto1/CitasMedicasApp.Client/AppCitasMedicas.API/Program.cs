@@ -28,7 +28,18 @@ builder.Services.AddScoped<ICitasNegocio, CitasNegocio>();
 builder.Services.AddScoped<IDoctorNegocio, DoctorNegocio>();
 builder.Services.AddScoped<IEspecialidadNegocio, EspecialidadNegocio>();
 builder.Services.AddScoped<IPacientesNegocio, PacientesNegocio>();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowMVC",
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:5244")
+                  .AllowAnyMethod()
+                  .AllowAnyHeader();
+        });
+});
 var app = builder.Build();
+app.UseCors("AllowMVC");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

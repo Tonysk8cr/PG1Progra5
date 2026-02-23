@@ -1,22 +1,25 @@
-﻿@model List<AppCitasMedicas.DTO.Response.Especialidad.EspecialidadResponse>
+﻿@{
+    ViewData["Title"] = "Especialidades";
+}
 
-<h2>Lista de especialidades</h2>
+<div class="card shadow-sm">
+    <div class="card-header bg-primary text-white d-flex justify-content-between">
+        <h5 class="mb-0">Lista de Especialidades</h5>
+    </div>
 
-<table class="table table-striped">
-    <thead class="table-dark">
-        <tr>
-            <th>Especialidad</th>
-            <th>Nombre</th>
+    <div class="card-body">
+        <table class="table table-striped" id="tablaEspecialidades">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
 
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>@item.EspecialidadId</td>
-                <td>@item.Nombre</td>
-            </tr>
-        }
-    </tbody>
-</table>
+@section Scripts {
+    <script src="~/js/especialidad.js"></script>
+}

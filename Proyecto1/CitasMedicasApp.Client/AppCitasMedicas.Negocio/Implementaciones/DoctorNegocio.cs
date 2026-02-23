@@ -75,7 +75,6 @@ namespace AppCitasMedicas.Negocio.Implementaciones
             doctor.EspecialidadId = request.EspecialidadId;
             doctor.Telefono = request.Telefono;
             doctor.Email = request.Email;
-            doctor.Activo = request.Activo;
 
             return await _repositorio.Actualizar(doctor);
         }
