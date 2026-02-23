@@ -1,0 +1,22 @@
+﻿@model List<AppCitasMedicas.DTO.Response.Especialidad.EspecialidadResponse>
+
+<h2>Lista de especialidades</h2>
+
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Especialidad</th>
+            <th>Nombre</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.EspecialidadId</td>
+                <td>@item.Nombre</td>
+            </tr>
+        }
+    </tbody>
+</table>

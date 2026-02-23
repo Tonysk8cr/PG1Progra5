@@ -73,7 +73,6 @@ namespace AppCitasMedicas.Negocio.Implementaciones
             paciente.Edad = request.Edad;
             paciente.Telefono = request.Telefono;
             paciente.Email = request.Email;
-            paciente.Activo = request.Activo;
 
             return await _repositorio.Actualizar(paciente);
         }

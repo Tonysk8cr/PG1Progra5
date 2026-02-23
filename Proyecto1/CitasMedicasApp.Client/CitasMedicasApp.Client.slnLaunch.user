@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Path": "AppCitasMedicas.API\\AppCitasMedicas.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "CitasMedicasApp.Client\\CitasMedicasApp.Client.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
