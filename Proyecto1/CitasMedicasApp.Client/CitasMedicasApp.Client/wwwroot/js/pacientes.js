@@ -1,7 +1,6 @@
 ﻿
 const baseUrl = "http://localhost:5003/api/pacientes";
 
-// 👇 ESTE BLOQUE VA AQUÍ
 document.addEventListener("DOMContentLoaded", () => {
 
     // Si existe la tabla → estamos en Index
@@ -17,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// ================== LISTAR ==================
+// Lista los pacientes en la tabla de Index y se llama al cargar la página
 async function cargarPacientes() {
     try {
         const response = await fetch(`${baseUrl}/Listar`);
@@ -47,7 +46,7 @@ async function cargarPacientes() {
 }
 
 
-// ================== CREAR ==================
+// Crea un nuevo paciente con los datos del formulario de Create y se llama al hacer submit
 async function guardar() {
 
     const data = {
@@ -67,7 +66,7 @@ async function guardar() {
 }
 
 
-// ================== ELIMINAR ==================
+// Elimina un paciente al hacer click en el botón Eliminar de la tabla de Index
 async function eliminar(id) {
     if (!confirm("¿Seguro que desea eliminar este paciente?")) return;
 
@@ -79,13 +78,13 @@ async function eliminar(id) {
 }
 
 
-// ================== EDITAR ==================
+// Editar un paciente al hacer click en el botón Editar de la tabla de Index redirige a la página Editar con el id en query string
 function editar(id) {
     window.location.href = `/Pacientes/Editar?id=${id}`;
 }
 
 
-// ================== CARGAR PACIENTE EDITAR ==================
+// Carga los datos de un paciente
 async function cargarPaciente() {
 
     const idInput = document.getElementById("pacienteId");
@@ -103,7 +102,7 @@ async function cargarPaciente() {
 }
 
 
-// ================== ACTUALIZAR ==================
+// Actualiza un paciente con los datos del formulario de Editar
 async function actualizar() {
 
     const id = document.getElementById("pacienteId").value;
