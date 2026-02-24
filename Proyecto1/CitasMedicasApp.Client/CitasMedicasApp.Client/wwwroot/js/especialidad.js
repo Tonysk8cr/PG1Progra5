@@ -21,6 +21,4 @@ async function cargarEspecialidades() {
     });
 }
 
-
-
     cargarEspecialidades();
