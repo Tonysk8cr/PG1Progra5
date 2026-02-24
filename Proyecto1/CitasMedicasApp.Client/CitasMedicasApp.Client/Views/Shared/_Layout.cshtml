@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/CitasMedicasApp.Client.styles.css" asp-append-version="true" />
+    <!--Liberia de inconos-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -16,37 +17,43 @@
 
         <div class="bg-dark text-white p-3 vh-100" style="width:250px;">
 
-            <h4 class="text-center mb-4">Menu</h4>
+            <h4 class="text-center mb-4">
+                <i class="fa-solid fa-stethoscope fa-2x mb-2 text-info"></i>
+                <br>
+                Menú
+            </h4>
 
             <ul class="nav nav-pills flex-column mb-auto">
 
+
+                <!--Se agrega el icono de la casa con la fuente .https://fontawesome.com/-->
                 <li class="nav-item mb-2">
                     <a asp-controller="Home" asp-action="Index" class="nav-link text-white">
-                         Inicio
+                        <i class="fas fa-home me-2"></i>  Inicio
                     </a>
                 </li>
 
                 <li class="nav-item mb-2">
                     <a asp-controller="Pacientes" asp-action="Index" class="nav-link text-white">
-                         Pacientes
+                        <i class="fa-solid fa-person me-2"></i>Pacientes
                     </a>
                 </li>
 
                 <li class="nav-item mb-2">
                     <a asp-controller="Doctores" asp-action="Index" class="nav-link text-white">
-                          Doctores
+                        <i class="fa-solid fa-user-doctor me-2"></i> Doctores
                     </a>
                 </li>
 
                 <li class="nav-item mb-2">
                     <a asp-controller="Especialidad" asp-action="Index" class="nav-link text-white">
-                         Especialidades
+                        <i class="fa-solid fa-kit-medical me-2"></i>Especialidades
                     </a>
                 </li>
 
                 <li class="nav-item mb-2">
                     <a asp-controller="Citas" asp-action="Index" class="nav-link text-white">
-                         Citas
+                        <i class="fa-solid fa-book-medical me-2"></i>Citas
                     </a>
                 </li>
 

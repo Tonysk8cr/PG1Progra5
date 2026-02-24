@@ -82,7 +82,8 @@ namespace AppCitasMedicas.Negocio.Implementaciones
         {
             var cita = await _repositorio.ObtenerPorId(id);
             if (cita == null) return false;
-
+            cita.PacienteId = request.PacienteId;
+            cita.DoctorId = request.DoctorId;
             cita.FechaCita = request.FechaCita;
             cita.HoraCita = request.HoraCita;
             cita.Motivo = request.Motivo;

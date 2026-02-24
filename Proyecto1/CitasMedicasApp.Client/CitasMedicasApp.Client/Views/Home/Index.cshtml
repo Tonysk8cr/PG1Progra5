@@ -6,39 +6,48 @@
 
     <!--Menu utilizando card de bootstrap y utilizando los id para llenarse por JS-->
     <div class="col-md-3">
-        <div class="card shadow border-0 text-center">
-            <div class="card-body">
-                <h5 class="text-muted">Pacientes</h5>
-                <h2 class="text-primary" id="totalPacientes">0</h2>
+        <a asp-controller="Pacientes" asp-action="Index" class="nav-link text-white">
+            <div class="card shadow border-0 text-center">
+                <div class="card-body">
+                    <h5 class="text-muted">Pacientes</h5>
+                    <h2 class="text-primary" id="totalPacientes">0</h2>
+                </div>
             </div>
-        </div>
+        </a>
     </div>
 
     <div class="col-md-3">
-        <div class="card shadow border-0 text-center">
-            <div class="card-body">
-                <h5 class="text-muted">Doctores</h5>
-                <h2 class="text-success" id="totalDoctores">0</h2>
+        <a asp-controller="Doctores" asp-action="Index" class="nav-link text-white">
+            <div class="card shadow border-0 text-center">
+                <div class="card-body">
+                    <h5 class="text-muted">Doctores</h5>
+                    <h2 class="text-success" id="totalDoctores">0</h2>
+                </div>
             </div>
-        </div>
+        </a>
     </div>
 
     <div class="col-md-3">
-        <div class="card shadow border-0 text-center">
-            <div class="card-body">
-                <h5 class="text-muted">Especialidades</h5>
-                <h2 class="text-warning" id="totalEspecialidades">0</h2>
+        <a asp-controller="Especialidad" asp-action="Index" class="nav-link text-white">
+            <div class="card shadow border-0 text-center">
+                <div class="card-body">
+                    <h5 class="text-muted">Especialidades</h5>
+                    <h2 class="text-warning" id="totalEspecialidades">0</h2>
+                </div>
             </div>
-        </div>
+        </a>
     </div>
 
     <div class="col-md-3">
-        <div class="card shadow border-0 text-center">
-            <div class="card-body">
-                <h5 class="text-muted">Citas Hoy</h5>
-                <h2 class="text-danger" id="totalCitasHoy">0</h2>
+        <a asp-controller="Citas" asp-action="Index" class="nav-link text-white">
+            <div class="card shadow border-0 text-center">
+                <div class="card-body">
+                    <h5 class="text-muted">Citas Hoy</h5>
+                    <h2 class="text-danger" id="totalCitasHoy">0</h2>
+                </div>
             </div>
-        </div>
+        </a>
+
     </div>
 </div>
 <!--Se llama al script de JS para el dashboard-->

@@ -1,6 +1,6 @@
 ﻿class ComboHelper {
 
-    static async llenarCombo(url, selectId, valueField, textField) {
+    static async llenarCombo(url, selectId, valueField, textBuilder) {
 
         try {
 
@@ -13,9 +13,15 @@
             select.innerHTML = "<option value=''>Seleccione...</option>";
 
             data.forEach(item => {
+
+                // Si es función → usar función
+                const texto = typeof textBuilder === "function"
+                    ? textBuilder(item)
+                    : item[textBuilder];
+
                 select.innerHTML += `
                     <option value="${item[valueField]}">
-                        ${item[textField]}
+                        ${texto}
                     </option>
                 `;
             });

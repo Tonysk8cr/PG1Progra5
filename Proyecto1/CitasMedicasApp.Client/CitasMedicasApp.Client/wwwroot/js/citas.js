@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             "http://localhost:5003/api/Pacientes/Listar",
             "pacienteId",
             "pacienteId",
-            "nombre"
+            (p) => `${p.nombre} (ID: ${p.pacienteId})`
         );
 
         //Llena el doctor automaticamente 
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             "http://localhost:5003/api/Doctores/Listar",
             "doctorId",
             "doctorId",
-            "nombre"
+            (d) => `${d.nombre} - ${d.especialidadNombre}`
         );
 
         // Si hay un citaId carga la cita
