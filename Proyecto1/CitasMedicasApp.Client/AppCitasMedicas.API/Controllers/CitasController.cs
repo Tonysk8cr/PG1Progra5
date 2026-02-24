@@ -1,168 +1,85 @@
 ﻿using AppCitasMedicas.AccesoDatos.Models;
+using AppCitasMedicas.DTO.Request.Citas;
 using AppCitasMedicas.Entities;
+using AppCitasMedicas.Negocio.Implementaciones;
+using AppCitasMedicas.Negocio.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace AppCitasMedicas.API.Controllers
 {
+    [Route("api/[controller]")]
     [ApiController]
-    [Route("[controller]")]
     public class CitasController : ControllerBase
     {
-        // ORM
-        private readonly CitasMedicasContext _context = null;
+        private readonly ICitasNegocio _negocio;
+        private readonly IDoctorNegocio _doctornegocio;
 
-        public CitasController(CitasMedicasContext pContext)
+        public CitasController(ICitasNegocio negocio, IDoctorNegocio doctornegocio)
         {
-            _context = pContext;
+            _negocio = negocio;
+            _doctornegocio = doctornegocio;
         }
 
-        // ==============================
-        // Listar citas (filtrar por fecha opcional)
-        // GET: /Citas/ListarCitas?fecha=2026-02-17
-        // ==============================
-
-        [HttpGet]
-        [Route("ListarCitas")]
-        public List<Citum> ListarCitas(DateOnly? fecha)
+        // GET: /api/citas/Listar
+        [HttpGet("Listar")]
+        public async Task<IActionResult> Listar()
         {
-            if (fecha.HasValue)
-            {
-                return _context.Cita
-                    .Where(c => c.FechaCita == fecha.Value)
-                    .ToList();
-            }
-
-            return _context.Cita.ToList();
+            var rpta = await _negocio.Listar();
+            return Ok(rpta);
         }
 
-        // ==============================
-        // Buscar cita por id
-        // GET: /Citas/BuscarCita?id=1
-        // ==============================
-
-        [HttpGet]
-        [Route("BuscarCita")]
-        public Citum BuscarCita(int id)
+        // GET: /api/citas/Buscar?id=5
+        [HttpGet("Buscar")]
+        public async Task<IActionResult> Buscar(int id)
         {
-            return _context.Cita.FirstOrDefault(c => c.CitaId == id);
+            var rpta = await _negocio.ObtenerPorId(id);
+            if (rpta == null) return NotFound($"No existe cita con id {id}.");
+            return Ok(rpta);
         }
 
-        // ==============================
-        // Crear cita
-        // POST: /Citas/AgregarCita
-        // ==============================
-
-        [HttpPost]
-        [Route("AgregarCita")]
-        public string AgregarCita(Citum temp)
+        // POST: /api/citas/Crear
+        [HttpPost("Crear")]
+        public async Task<IActionResult> Crear([FromBody] CitasRequest request)
         {
-            string msj = "";
-            try
+            // Validar que la fecha no sea en el pasado
+            if (request.FechaCita < DateOnly.FromDateTime(DateTime.Today))
             {
-                if (temp == null)
-                {
-                    msj = "No se permiten datos en blanco.";
-                }
-                else
-                {
-                    _context.Cita.Add(temp);
-                    _context.SaveChanges();
-
-                    msj = $"Cita {temp.CitaId} fue guardada correctamente.";
-                }
-            }
-            catch (Exception ex)
-            {
-                msj = $"Error, {ex.InnerException?.ToString() ?? ex.Message}";
+                return BadRequest("La fecha de la cita no puede ser en el pasado.");
             }
 
-            return msj;
+            // Validar que el doctor exista
+            var doctor = await _doctornegocio.ObtenerPorId(request.DoctorId);
+            if (doctor == null)
+            {
+                return BadRequest($"No existe un doctor con id {request.DoctorId}.");
+            }
+
+            var ok = await _negocio.Crear(request);
+            return ok ? Ok("Cita guardada correctamente.") : BadRequest("No se pudo guardar.");
         }
 
-        // ==============================
-        // Modificar cita
-        // PUT: /Citas/ModificarCita
-        // ==============================
-
-        [HttpPut]
-        [Route("ModificarCita")]
-        public string ModificarCita(Citum temp)
+        // PUT: /api/citas/Actualizar?id=5
+        [HttpPut("Actualizar")]
+        public async Task<IActionResult> Actualizar(int id, [FromBody] CitasUpdateRequest request)
         {
-            string msj = "";
-            try
+            // Validar que el doctor exista
+            var doctor = await _doctornegocio.ObtenerPorId(request.DoctorId);
+            if (doctor == null)
             {
-                if (temp == null)
-                {
-                    msj = "No se permiten datos en blanco.";
-                }
-                else
-                {
-                    var cita = _context.Cita.FirstOrDefault(c => c.CitaId == temp.CitaId);
-
-                    if (cita != null)
-                    {
-                        cita.PacienteId = temp.PacienteId;
-                        cita.DoctorId = temp.DoctorId;
-                        cita.FechaCita = temp.FechaCita;
-                        cita.HoraCita = temp.HoraCita;
-                        cita.Motivo = temp.Motivo;
-                        cita.Estado = temp.Estado;
-
-                        _context.Cita.Update(cita);
-                        _context.SaveChanges();
-
-                        msj = $"La cita con id {temp.CitaId} fue actualizada correctamente.";
-                    }
-                    else
-                    {
-                        msj = $"No existe cita con id {temp.CitaId}.";
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                msj = $"Error, {ex.InnerException?.ToString() ?? ex.Message}";
+                return BadRequest($"No existe un doctor con id {request.DoctorId}.");
             }
 
-            return msj;
+            var ok = await _negocio.Actualizar(id, request);
+            return ok ? Ok($"Cita {id} actualizada correctamente.") : NotFound($"No existe cita con id {id}.");
         }
 
-        // ==============================
-        // Eliminar / Cancelar cita
-        // DELETE: /Citas/EliminarCita?id=1
-        // ==============================
-
-        [HttpDelete]
-        [Route("EliminarCita")]
-        public string EliminarCita(int id)
+        // DELETE: /api/citas/Eliminar?id=5
+        [HttpDelete("Eliminar")]
+        public async Task<IActionResult> Eliminar(int id)
         {
-            string msj = "";
-            try
-            {
-                var cita = _context.Cita.FirstOrDefault(c => c.CitaId == id);
-
-                if (cita == null)
-                {
-                    msj = $"No existe cita con id {id}.";
-                }
-                else
-                {
-                    // Cancelar (soft delete)
-                    cita.Estado = 0;
-
-                    _context.Cita.Update(cita);
-                    _context.SaveChanges();
-
-                    msj = $"Cita {id} cancelada correctamente.";
-                }
-            }
-            catch (Exception ex)
-            {
-                msj = $"Error, {ex.InnerException?.ToString() ?? ex.Message}";
-            }
-
-            return msj;
+            var ok = await _negocio.Eliminar(id);
+            return ok ? Ok($"Cita {id} eliminada correctamente.") : NotFound($"No existe cita con id {id}.");
         }
     }
 }
