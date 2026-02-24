@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Crear Cita";
+}
+
+<div class="card shadow-sm">
+    <div class="card-header bg-success text-white">
+        Crear Cita
+    </div>
+
+    <div class="card-body">
+
+        <div class="mb-3">
+            <label>Paciente</label>
+            <select id="pacienteId" class="form-control"></select>
+        </div>
+
+        <div class="mb-3">
+            <label>Doctor</label>
+            <select id="doctorId" class="form-control"></select>
+        </div>
+
+        <div class="mb-3">
+            <label>Fecha</label>
+            <input type="text" id="fechaCita" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label>Hora</label>
+            <input type="text" id="horaCita" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label>Motivo</label>
+            <input type="text" id="motivo" class="form-control" />
+        </div>
+
+        <button class="btn btn-success" onclick="guardar()">Guardar</button>
+        <a href="/Citas" class="btn btn-secondary">Cancelar</a>
+
+    </div>
+</div>
+
+@section Scripts {
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="~/js/utils.js"></script>
+    <script src="~/js/citas.js"></script>
+}

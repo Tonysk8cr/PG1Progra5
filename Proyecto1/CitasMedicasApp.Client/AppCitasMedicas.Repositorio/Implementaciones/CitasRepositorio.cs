@@ -16,12 +16,18 @@ namespace AppCitasMedicas.Repositorio.Implementaciones
 
         public async Task<List<Citum>> Listar()
         {
-            return await _bd.Cita.ToListAsync();
+            return await _bd.Cita
+                .Include(c => c.Paciente)
+                .Include(c => c.Doctor)
+                .ToListAsync();
         }
 
         public async Task<Citum?> ObtenerPorId(int id)
         {
-            return await _bd.Cita.FirstOrDefaultAsync(p => p.CitaId == id);
+            return await _bd.Cita
+                .Include(c => c.Paciente)
+                .Include(c => c.Doctor)
+                .FirstOrDefaultAsync(c => c.CitaId == id);
         }
 
         public async Task<bool> Crear(Citum entidad)

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/CitasMedicasApp.Client.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
@@ -44,7 +45,7 @@
                 </li>
 
                 <li class="nav-item mb-2">
-                    <a asp-controller="Cita" asp-action="Index" class="nav-link text-white">
+                    <a asp-controller="Citas" asp-action="Index" class="nav-link text-white">
                          Citas
                     </a>
                 </li>
@@ -57,8 +58,11 @@
         <div class="flex-grow-1 p-4 bg-light">
 
             <header class="mb-4">
-                <h2>Bienvenido al Sistema de Gestión de Citas Medicas</h2>
-                <hr />
+                <nav class="navbar navbar-light bg-white shadow-sm mb-3">
+                    <span class="navbar-brand mb-0 h5">
+                        Sistema de Gestión de Citas Médicas
+                    </span>
+                </nav>
             </header>
 
             <main>

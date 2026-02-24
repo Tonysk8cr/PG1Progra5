@@ -2,10 +2,8 @@
 
 namespace AppCitasMedicas.Client.Controllers
 {
-    public class PacientesController : Controller
+    public class CitasController : Controller
     {
-
-        //Vista paciente 
         public IActionResult Index()
         {
             return View();
@@ -17,12 +15,6 @@ namespace AppCitasMedicas.Client.Controllers
         }
 
         public IActionResult Editar(int id)
-        {
-            ViewBag.Id = id;
-            return View();
-        }
-
-        public IActionResult Bucar(int id)
         {
             ViewBag.Id = id;
             return View();

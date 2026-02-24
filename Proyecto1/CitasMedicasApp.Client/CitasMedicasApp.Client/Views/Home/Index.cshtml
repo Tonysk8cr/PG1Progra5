@@ -2,7 +2,44 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="row mt-4">
+
+    <div class="col-md-3">
+        <div class="card shadow border-0 text-center">
+            <div class="card-body">
+                <h5 class="text-muted">Pacientes</h5>
+                <h2 class="text-primary" id="totalPacientes">0</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card shadow border-0 text-center">
+            <div class="card-body">
+                <h5 class="text-muted">Doctores</h5>
+                <h2 class="text-success" id="totalDoctores">0</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card shadow border-0 text-center">
+            <div class="card-body">
+                <h5 class="text-muted">Especialidades</h5>
+                <h2 class="text-warning" id="totalEspecialidades">0</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card shadow border-0 text-center">
+            <div class="card-body">
+                <h5 class="text-muted">Citas Hoy</h5>
+                <h2 class="text-danger" id="totalCitasHoy">0</h2>
+            </div>
+        </div>
+    </div>
 </div>
+@section Scripts {
+    <script src="~/js/dashboard.js"></script>
+}

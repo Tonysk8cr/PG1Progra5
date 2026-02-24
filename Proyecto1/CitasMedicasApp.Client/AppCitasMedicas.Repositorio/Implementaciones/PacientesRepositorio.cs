@@ -21,7 +21,7 @@ namespace AppCitasMedicas.Repositorio.Implementaciones
 
         public async Task<Pacientes?> ObtenerPorId(int id)
         {
-            return await _bd.Pacientes.FirstOrDefaultAsync(p => p.PacienteId == id);
+            return await _bd.Pacientes.Where(p => p.Activo).FirstOrDefaultAsync(p => p.PacienteId == id);
         }
 
         public async Task<bool> Crear(Pacientes entidad)

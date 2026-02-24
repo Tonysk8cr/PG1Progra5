@@ -1,14 +1,15 @@
 ﻿@{
-    ViewData["Title"] = "Pacientes";
+    ViewData["Title"] = "Citas";
 }
 
 <div class="card shadow-sm">
     <div class="card-header bg-primary text-white d-flex justify-content-between">
-        <h5 class="mb-0">Lista de Pacientes</h5>
-        <a href="/Pacientes/Crear" class="btn btn-light btn-sm">Agregar</a>
+        <h5 class="mb-0">Lista de Citas</h5>
+        <a href="/Citas/Crear" class="btn btn-light btn-sm">Agregar</a>
     </div>
 
     <div class="card-body">
+
         <div class="row mb-3">
             <div class="col-md-3">
                 <input type="number" id="buscarId" class="form-control" placeholder="Buscar por ID" />
@@ -16,27 +17,30 @@
             <div class="col-md-2">
                 <button class="btn btn-primary" onclick="buscarPorId()">Buscar</button>
             </div>
-            <!--Si le da clic en Mostrar Todos busca el metodo cargarPacientes() que está en el pacientes.js-->
             <div class="col-md-2">
-                <button class="btn btn-secondary" onclick="cargarPacientes()">Mostrar Todos</button>
+                <button class="btn btn-secondary" onclick="cargarCitas()">Mostrar Todos</button>
             </div>
         </div>
-        <table class="table table-striped" id="tablaPacientes">
+
+        <table class="table table-striped" id="tablaCitas">
             <thead class="table-dark">
                 <tr>
-                    <th>Nombre</th>
-                    <th>Edad</th>
-                    <th>Teléfono</th>
-                    <th>Email</th>
+                    <th>ID</th>
+                    <th>Paciente</th>
+                    <th>Doctor</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Motivo</th>
+                    <th>Estado</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
-            <!--Acá se llena la informacion que se envia del pacientes.js-->
-            <tbody></tbody> 
+            <tbody></tbody>
         </table>
+
     </div>
 </div>
 
 @section Scripts {
-    <script src="~/js/pacientes.js"></script>
+    <script src="~/js/citas.js"></script>
 }

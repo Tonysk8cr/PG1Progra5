@@ -1,33 +1,42 @@
-﻿@model AppCitasMedicas.DTO.Request.Doctor.DoctorUpdateRequest
+﻿@{
+    ViewData["Title"] = "Editar Doctor";
+    var id = ViewBag.Id;
+}
 
-<h2>Editar Paciente</h2>
+<input type="hidden" id="doctorId" value="@id" />
 
-<form asp-action="Editar" method="post" asp-route-id="@ViewBag.Id">
-
-    <div class="mb-3">
-        <label class="form-label">Nombre</label>
-        <input asp-for="Nombre" class="form-control" />
+<div class="card shadow-sm">
+    <div class="card-header bg-warning">
+        Editar Doctor
     </div>
 
-    <div class="mb-3">
-        <label class="form-label">Id de especialidad</label>
-        <input asp-for="EspecialidadId" class="form-control" />
-    </div>
-    <div class="mb-3">
-        <label class="form-label">Telefono</label>
-        <input asp-for="Telefono" class="form-control" />
-    </div>
-    <div class="mb-3">
-        <label class="form-label">Email</label>
-        <input asp-for="Email" class="form-control" />
-    </div>
+    <div class="card-body">
 
-    <button type="submit" class="btn btn-primary">
-        Actualizar
-    </button>
+        <div class="mb-2">
+            <label>Nombre</label>
+            <input type="text" id="nombre" class="form-control" />
+        </div>
 
-    <a asp-action="Index" class="btn btn-secondary">
-        Volver
-    </a>
+        <div class="mb-2">
+            <label>Especialidad</label>
+            <select id="especialidadId" class="form-control"></select>
+        </div>
 
-</form>
+        <div class="mb-2">
+            <label>Teléfono</label>
+            <input type="text" id="telefono" class="form-control" />
+        </div>
+
+        <div class="mb-2">
+            <label>Email</label>
+            <input type="email" id="email" class="form-control" />
+        </div>
+
+        <button class="btn btn-warning" onclick="actualizar()">Actualizar</button>
+        <a href="/Doctores" class="btn btn-secondary">Cancelar</a>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/doctores.js"></script>
+}

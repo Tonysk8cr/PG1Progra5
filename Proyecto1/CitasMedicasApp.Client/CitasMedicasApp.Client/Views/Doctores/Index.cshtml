@@ -1,44 +1,46 @@
-﻿@model List<AppCitasMedicas.DTO.Response.Doctor.DoctorResponse>
+﻿@{
+    ViewData["Title"] = "Doctores";
+}
 
-<h2>Lista de Doctores</h2>
+<div class="card shadow-sm">
+    <div class="card-header bg-primary text-white d-flex justify-content-between">
+        <h5 class="mb-0">Lista de Doctores</h5>
+        <a href="/Doctores/Crear" class="btn btn-light btn-sm">Agregar</a>
+    </div>
 
-<a asp-action="Crear" class="btn btn-success mb-3">
-    Agregar Doctor
-</a>
+    <div class="card-body">
 
-<table class="table table-striped">
-    <thead class="table-dark">
-        <tr>
-            <th>Nombre</th>
-            <th>EspecialidadId</th>
-            <th>Telefono</th>
-            <th>Email</th>
-            <th>Acciones</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>@item.Nombre</td>
-                <td>@item.EspecialidadId</td>
-                <td>@item.Telefono</td>
-                <td>@item.Email</td>
-                <td>
-                    <a asp-action="Editar"
-                       asp-route-id="@item.DoctorId"
-                       class="btn btn-warning btn-sm">
-                        Editar
-                    </a>
+        <!-- Busca pacientes por id -->
+        <div class="row mb-3">
+            <div class="col-md-3">
+                <input type="number" id="buscarId" class="form-control" placeholder="Buscar por ID" />
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-primary" onclick="buscarPorId()">Buscar</button>
+            </div>
+            <!-- Muestra todos los pacientes de nuevo con el metodo de doctroes.js -->
+            <div class="col-md-2">
+                <button class="btn btn-secondary" onclick="cargarDoctores()">Mostrar Todos</button>
+            </div>
+        </div>
 
-                    <a asp-action="Eliminar"
-                       asp-route-id="@item.DoctorId"
-                       class="btn btn-danger btn-sm"
-                       onclick="return confirm('¿Seguro que desea eliminar este paciente?');">
-                        Eliminar
-                    </a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+        <!-- TABLA -->
+        <table class="table table-striped" id="tablaDoctores">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Especialidad</th>
+                    <th>Teléfono</th>
+                    <th>Email</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/doctores.js"></script>
+}

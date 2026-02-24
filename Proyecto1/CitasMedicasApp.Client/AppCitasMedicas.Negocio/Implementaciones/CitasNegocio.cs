@@ -25,12 +25,18 @@ namespace AppCitasMedicas.Negocio.Implementaciones
             return lista.Select(c => new CitaResponse
             {
                 CitaId = c.CitaId,
+
                 PacienteId = c.PacienteId,
+                PacienteNombre = c.Paciente.Nombre,
+
                 DoctorId = c.DoctorId,
+                DoctorNombre = c.Doctor.Nombre,
+
                 FechaCita = c.FechaCita,
                 HoraCita = c.HoraCita,
                 Motivo = c.Motivo,
                 Estado = c.Estado
+
             }).ToList();
         }
 
@@ -42,8 +48,13 @@ namespace AppCitasMedicas.Negocio.Implementaciones
             return new CitaResponse
             {
                 CitaId = cita.CitaId,
+
                 PacienteId = cita.PacienteId,
+                PacienteNombre = cita.Paciente.Nombre,
+
                 DoctorId = cita.DoctorId,
+                DoctorNombre = cita.Doctor.Nombre,
+
                 FechaCita = cita.FechaCita,
                 HoraCita = cita.HoraCita,
                 Motivo = cita.Motivo,

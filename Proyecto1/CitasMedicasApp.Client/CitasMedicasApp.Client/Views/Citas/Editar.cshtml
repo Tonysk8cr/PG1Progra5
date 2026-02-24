@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "Editar Cita";
+    var id = ViewBag.Id;
+}
+
+<input type="hidden" id="citaId" value="@id" />
+
+<div class="card shadow-sm">
+    <div class="card-header bg-warning text-white">
+        Editar Cita
+    </div>
+
+    <div class="card-body">
+
+        <!-- PACIENTE -->
+        <div class="mb-3">
+            <label>Paciente</label>
+            <select id="pacienteId" class="form-control"></select>
+        </div>
+
+        <!-- DOCTOR -->
+        <div class="mb-3">
+            <label>Doctor</label>
+            <select id="doctorId" class="form-control"></select>
+        </div>
+
+        <!-- FECHA -->
+        <div class="mb-3">
+            <label>Fecha</label>
+            <input type="text" id="fechaCita" class="form-control" />
+        </div>
+
+        <!-- HORA -->
+        <div class="mb-3">
+            <label>Hora</label>
+            <input type="text" id="horaCita" class="form-control" />
+        </div>
+
+        <!-- MOTIVO -->
+        <div class="mb-3">
+            <label>Motivo</label>
+            <input type="text" id="motivo" class="form-control" />
+        </div>
+
+        <!-- ESTADO -->
+        <div class="mb-3">
+            <label>Estado</label>
+            <select id="estado" class="form-control">
+                <option value="1">Activa</option>
+                <option value="0">Cancelada</option>
+            </select>
+        </div>
+
+        <button class="btn btn-warning" onclick="actualizar()">Actualizar</button>
+        <a href="/Citas" class="btn btn-secondary">Cancelar</a>
+
+    </div>
+</div>
+
+@section Scripts {
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script src="~/js/utils.js"></script>
+    <script src="~/js/citas.js"></script>
+}

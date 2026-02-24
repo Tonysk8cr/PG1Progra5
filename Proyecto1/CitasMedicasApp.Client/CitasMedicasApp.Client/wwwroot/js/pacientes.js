@@ -22,6 +22,7 @@ async function cargarPacientes() {
         const response = await fetch(`${baseUrl}/Listar`);
         const data = await response.json();
 
+        //Si obtiene respuesta llena la tablaPacientes justo en el tbody
         const tbody = document.querySelector("#tablaPacientes tbody");
         tbody.innerHTML = "";
 
@@ -121,4 +122,45 @@ async function actualizar() {
     });
 
     window.location.href = "/Pacientes";
+}
+
+
+//Busca un paciente por ID al hacer click en el botón Buscar de la página Index y muestra solo ese paciente en la tabla
+async function buscarPorId() {
+
+    const id = document.getElementById("buscarId").value;
+
+    //Si no coloca id envia una alerta
+    if (!id) {
+        alert("Ingrese un ID");
+        return;
+    }
+
+    //Realiza la busqueda en el endpoint BuscarID
+    const response = await fetch(`${baseUrl}/Buscar?id=${id}`);
+
+    //Si el id no existe envia alerta
+    if (!response.ok) {
+        alert(` El paciente con id ${id} no existe`);
+        return;
+    }
+
+    //Si obtiene respuesta llena la tablaPacientes 
+    const p = await response.json();
+
+    const tbody = document.querySelector("#tablaPacientes tbody");
+    tbody.innerHTML = "";
+
+    tbody.innerHTML = `
+        <tr>
+            <td>${p.nombre}</td>
+            <td>${p.edad}</td>
+            <td>${p.telefono ?? ""}</td>
+            <td>${p.email ?? ""}</td>
+            <td>
+                <button class="btn btn-warning btn-sm" onclick="editar(${p.pacienteId})">Editar</button>
+                <button class="btn btn-danger btn-sm" onclick="eliminar(${p.pacienteId})">Eliminar</button>
+            </td>
+        </tr>
+    `;
 }
