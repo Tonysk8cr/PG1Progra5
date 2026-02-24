@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (document.getElementById("fechaCita")) {
 
         flatpickr("#fechaCita", {
-            dateFormat: "Y-m-d"
+            dateFormat: "Y-m-d",
+            minDate: "today" // No permite fechas antes de hoy
         });
 
         flatpickr("#horaCita", {

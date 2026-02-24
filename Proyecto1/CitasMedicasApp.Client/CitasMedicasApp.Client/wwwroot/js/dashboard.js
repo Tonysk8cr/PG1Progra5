@@ -24,14 +24,10 @@ async function cargarTotales() {
         const citas = await fetch("http://localhost:5003/api/Citas/Listar");
         const citasData = await citas.json();
 
-        const hoy = new Date().toISOString().split("T")[0];
-
-        const citasHoy = citasData.filter(c => c.fechaCita === hoy);
-
-        document.getElementById("totalCitasHoy").innerText = citasHoy.length;
-
+        // Total de todas las citas
+        document.getElementById("totalCitasHoy").innerText = citasData.length;
     }
     catch (error) {
         console.error("Error cargando dashboard:", error);
     }
-    }
+}

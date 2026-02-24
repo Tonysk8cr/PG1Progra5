@@ -22,7 +22,13 @@ namespace AppCitasMedicas.Negocio.Implementaciones
         {
             var lista = await _repositorio.Listar();
 
-            return lista.Select(c => new CitaResponse
+            var hoy = DateOnly.FromDateTime(DateTime.Today);
+
+            return lista
+                    .OrderBy(c => c.FechaCita < hoy ? 2 : c.FechaCita > hoy ? 1 : 0)
+                    .ThenBy(c => c.FechaCita)
+                    .ThenBy(c => c.HoraCita)
+                    .Select(c => new CitaResponse
             {
                 CitaId = c.CitaId,
 
