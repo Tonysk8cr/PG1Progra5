@@ -4,8 +4,12 @@
     <Project Path="AppTareas.Entities/AppTareas.Entities.csproj" Id="df5b3dab-c733-4af0-b422-4310593b3b80" />
     <Project Path="AppTareas.Repositorio/AppTareas.Repositorio.csproj" Id="f083f365-c655-413e-8fd3-a0b9b8067252" />
   </Folder>
-  <Folder Name="/02.CapaNegocio/" />
-  <Folder Name="/03.CapaTransversal/" />
+  <Folder Name="/02.CapaNegocio/">
+    <Project Path="AppTareas.Negocio/AppTareas.Negocio.csproj" Id="d8b827b4-21e2-46bd-acf3-b33b93ebecdb" />
+  </Folder>
+  <Folder Name="/03.CapaTransversal/">
+    <Project Path="AppTareas.DTO/AppTareas.DTO.csproj" Id="def6d930-e721-42f7-8d55-f3035f037d57" />
+  </Folder>
   <Folder Name="/04.CapaServidor/">
     <Project Path="AppTareas.API/AppTareas.API.csproj" Id="3cdf01fb-37aa-41b1-a76e-e68ca5764172" />
   </Folder>

@@ -13,7 +13,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AppTareas.AccesoDatos\AppTareas.AccesoDatos.csproj" />
+    <ProjectReference Include="..\AppTareas.DTO\AppTareas.DTO.csproj" />
     <ProjectReference Include="..\AppTareas.Entities\AppTareas.Entities.csproj" />
+    <ProjectReference Include="..\AppTareas.Negocio\AppTareas.Negocio.csproj" />
     <ProjectReference Include="..\AppTareas.Repositorio\AppTareas.Repositorio.csproj" />
   </ItemGroup>
 
