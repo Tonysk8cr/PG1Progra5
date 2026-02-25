@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/01.CapaAccesoDatos/">
+    <Project Path="AppTareas.AccesoDatos/AppTareas.AccesoDatos.csproj" Id="5c34e56a-775d-4b1e-a58c-7da6a721ea2f" />
+    <Project Path="AppTareas.Entities/AppTareas.Entities.csproj" Id="df5b3dab-c733-4af0-b422-4310593b3b80" />
+    <Project Path="AppTareas.Repositorio/AppTareas.Repositorio.csproj" Id="f083f365-c655-413e-8fd3-a0b9b8067252" />
+  </Folder>
+  <Folder Name="/02.CapaNegocio/" />
+  <Folder Name="/03.CapaTransversal/" />
+  <Folder Name="/04.CapaServidor/">
+    <Project Path="AppTareas.API/AppTareas.API.csproj" Id="3cdf01fb-37aa-41b1-a76e-e68ca5764172" />
+  </Folder>
+  <Folder Name="/05.CapaCliente/">
+    <Project Path="Prueba1Grupo2/Prueba1Grupo2.csproj" />
+  </Folder>
+</Solution>
