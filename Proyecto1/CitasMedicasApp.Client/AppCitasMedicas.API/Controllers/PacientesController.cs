@@ -9,18 +9,18 @@ namespace AppCitasMedicas.API.Controllers
     [ApiController]
     public class PacientesController : ControllerBase
     {
-        private readonly IPacientesNegocio _negocio;
+        private readonly IPacientesNegocio _repositorio;
 
-        public PacientesController(IPacientesNegocio negocio)
+        public PacientesController(IPacientesNegocio repositorio)
         {
-            _negocio = negocio;
+            _repositorio = repositorio;
         }
 
         // GET: /api/pacientes/Listar
         [HttpGet("Listar")]
         public async Task<IActionResult> Listar()
         {
-            var rpta = await _negocio.Listar();
+            var rpta = await _repositorio.Listar();
             return Ok(rpta);
         }
 
@@ -28,7 +28,7 @@ namespace AppCitasMedicas.API.Controllers
         [HttpGet("Buscar")]
         public async Task<IActionResult> Buscar(int id)
         {
-            var rpta = await _negocio.ObtenerPorId(id);
+            var rpta = await _repositorio.ObtenerPorId(id);
             if (rpta == null) return NotFound($"No existe paciente con id {id}.");
             return Ok(rpta);
         }
@@ -37,7 +37,7 @@ namespace AppCitasMedicas.API.Controllers
         [HttpPost("Crear")]
         public async Task<IActionResult> Crear([FromBody] PacientesRequest request)
         {
-            var ok = await _negocio.Crear(request);
+            var ok = await _repositorio.Crear(request);
             return ok ? Ok("Paciente guardado correctamente.") : BadRequest("No se pudo guardar.");
         }
 
@@ -45,7 +45,7 @@ namespace AppCitasMedicas.API.Controllers
         [HttpPut("Actualizar")]
         public async Task<IActionResult> Actualizar(int id, [FromBody] PacientesUpdateRequest request)
         {
-            var ok = await _negocio.Actualizar(id, request);
+            var ok = await _repositorio.Actualizar(id, request);
             return ok ? Ok($"Paciente {id} actualizado correctamente.") : NotFound($"No existe paciente con id {id}.");
         }
 
@@ -53,7 +53,7 @@ namespace AppCitasMedicas.API.Controllers
         [HttpDelete("Eliminar")]
         public async Task<IActionResult> Eliminar(int id)
         {
-            var ok = await _negocio.Eliminar(id);
+            var ok = await _repositorio.Eliminar(id);
             return ok ? Ok($"Paciente {id} eliminado correctamente.") : NotFound($"No existe paciente con id {id}.");
         }
     }

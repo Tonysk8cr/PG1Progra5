@@ -46,7 +46,7 @@ namespace AppCitasMedicas.Repositorio.Implementaciones
             var doctor = await _bd.Doctors.FirstOrDefaultAsync(p => p.DoctorId == id);
             if (doctor == null) return false;
 
-            // soft delete (más seguro que borrar por FK con citas)
+            // soft delete 
             doctor.Activo = false;
             _bd.Doctors.Update(doctor);
 

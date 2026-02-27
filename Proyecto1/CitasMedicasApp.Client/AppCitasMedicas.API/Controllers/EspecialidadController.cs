@@ -7,20 +7,19 @@ namespace AppCitasMedicas.API.Controllers
     [ApiController]
     public class EspecialidadesController : ControllerBase
     {
-        private readonly IEspecialidadNegocio _negocio;
+        private readonly IEspecialidadNegocio _repositorio;
 
-        public EspecialidadesController(IEspecialidadNegocio negocio)
+        public EspecialidadesController(IEspecialidadNegocio repositorio)
         {
-            _negocio = negocio;
+            _repositorio = repositorio;
         }
 
         // GET: /api/especialidades/Listar
         [HttpGet("Listar")]
         public async Task<IActionResult> Listar()
         {
-            var rpta = await _negocio.Listar();
+            var rpta = await _repositorio.Listar();
             return Ok(rpta);
         }
     }
 }
-
