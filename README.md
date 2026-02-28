@@ -85,6 +85,12 @@ Como cada integrante trabaja en una máquina distinta, es necesario modificar el
 ```
 Reemplazá `TU_SERVIDOR_AQUÍ` por el nombre o instancia de SQL Server de tu computadora.
 
+### Documentación técnica de la API Desarrollada
+
+La documentación técnica de la API se encuentra disponible en dos formatos:
+- **Documento Word:** Documentación técnica API.docx
+- **Archivo Markdown:** [APIdocu.md](APIdocu.md) - Accesible directamente desde el repositorio
+
 ---
 
 ## Integrantes

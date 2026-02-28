@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Prueba1Grupo2.Models;
+namespace Prueba1Grupo2.Client.Models;
 
 public partial class Tarea
 {
