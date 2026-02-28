@@ -77,8 +77,7 @@ Como cada integrante trabaja en una máquina distinta, es necesario modificar el
 
 1. Abrí el archivo appsettings.json.
 2. Este archivo se encuentra en la capa de servidor.
-3. Buscá el appsettings.json.
-4. Modificá el valor del servidor:
+3. Modificá el valor del servidor:
 
 ```bash
     SERVER=TU_SERVIDOR_AQUÍ
