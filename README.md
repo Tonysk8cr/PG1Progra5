@@ -76,8 +76,8 @@ Estas credenciales ya están configuradas en el archivo de configuración del pr
 Como cada integrante trabaja en una máquina distinta, es necesario modificar el servidor del string de conexión:
 
 1. Abrí el archivo appsettings.json.
-2. Este archivo se encuentra en la capa de cliente.
-3. Buscá la sección de conexión a la base de datos.
+2. Este archivo se encuentra en la capa de servidor.
+3. Buscá el appsettings.json.
 4. Modificá el valor del servidor:
 
 ```bash
