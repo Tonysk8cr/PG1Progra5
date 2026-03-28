@@ -1,7 +1,33 @@
 ﻿@page "/estudiante/nuevo"
+@inject NavigationManager navigationManager
 
 <h3>Nuevo estudiante</h3>
 
+<!--
+    TODO:
+// Agreguen el la cuadricula aca
+// perdon por la gramatica tengo el pc en ingles
+// Antes del boton de regreso para mantener la ui ux
+// Loco loco loco
+-->
+<div class="text-center">
+    <button type="button" class="btn btn-outline-danger" @onclick="regresar">
+        <!-- icono de return de boostrap, esta anidado dentro del boton-->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5" />
+        </svg>
+    </button>
+    <!--Aca pueden agregar el boton para guardar los datos-->
+</div>
+
+
 @code {
+
+    private async Task regresar()
+    {
+
+        navigationManager.NavigateTo("/estudiante");
+
+    }
 
 }

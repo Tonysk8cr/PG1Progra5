@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="EstudianteAppWeb/EstudianteAppWeb.csproj" Id="826d1e95-fc03-4911-a0fa-b603e26c2fc2" />
   <Project Path="EstudiantesApp/EstudiantesApp.csproj">
     <Deploy Solution="Debug|*" />
   </Project>

@@ -1,12 +1,29 @@
 ﻿@page "/estudiante"
+@inject NavigationManager navigationManager
+@using EstudiantesApp.Services
+@using EstudiantesAppWeb.Estudiante
+@inject EstudianteService estudianteService
 
 <h3>Estudiantes</h3>
 
 <div class="text-center">
-    <button type="button" class="btn btn-outline-success">
-    </button>
+    <button type="button" class="btn btn-outline-success" @onclick="nuevo">+</button>
 </div>
 
 @code {
+
+    private async Task nuevo()
+    {
+        navigationManager.NavigateTo("/estudiante/nuevo");
+    }
+
+    public List<EstudianteListCLS> estudiante = new List<EstudianteListCLS>();
+
+    protected override async Task OnInitializedAsync()
+    {
+    
+        estudiante = await estudianteService.listarEstudiante();
+
+    }
 
 }

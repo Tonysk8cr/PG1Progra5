@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
+using EstudiantesAppWeb.Estudiante;
+using EstudiantesApp.Services;
 
 namespace EstudiantesApp
 {
@@ -13,6 +15,8 @@ namespace EstudiantesApp
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 });
+
+            builder.Services.AddScoped<EstudianteService>();
 
             builder.Services.AddMauiBlazorWebView();
 
