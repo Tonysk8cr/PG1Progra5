@@ -47,6 +47,45 @@ git clone https://github.com/Tonysk8cr/PG1Progra5.git
 ```
 
 ---
+## Documentación proyecto final
+
+El proyecto final corresponde a la aplicación de manejo es estudiantes
+
+###  Consideraciones importantes
+
+- La aplicación **no utiliza ninguna base de datos**, ni local ni en la nube.  
+- Por lo tanto, **no es necesario iniciar ningún motor de base de datos** para su ejecución.
+
+
+### Requisitos para ejecutar la aplicación
+
+Para correr la aplicación correctamente, es necesario contar con:
+
+- Un **emulador de Android** instalado  
+- Que el emulador sea **reconocido por Visual Studio**
+
+### Configuración del emulador
+
+Para configurar el emulador, puedes seguir la guía oficial de Microsoft:
+-> [Managing virtual devices with the Android Device Manager](https://learn.microsoft.com/en-us/dotnet/maui/android/emulator/device-manager?view=net-maui-10.0)
+
+### Ejecución del proyecto
+
+Una vez configurado el emulador:
+
+1. Compila la solución  
+2. Ejecuta la aplicación desde Visual Studio  
+
+### Integrantes del proyecto
+Para ver las personas involucradas en este proyecto -> [Integrantes](#integrantes)
+
+### Código fuente
+
+Puedes acceder al código del proyecto en el siguiente enlace:  
+-> [Repositorio en GitHub](https://github.com/Tonysk8cr/PG1Progra5/tree/main/Proyecto2/EstudiantesApp)
+
+
+---
 
 ## Configuracion especifica del proyecto 1
 
@@ -101,7 +140,7 @@ La documentación técnica de la API se encuentra disponible en dos formatos:
 
 ## Profesor a cargo
 
-Salgado Vega Jonathan
+Salgado Vega Jonathan [@Jonathan](https://www.linkedin.com/in/jonathan-salgado-vega-77a00368/)
 
 ## Universidad
-Universidad Hispanoamericana – Costa Rica -> https://uh.ac.cr/
+[Universidad Hispanoamericana – Costa Rica](https://uh.ac.cr/)
