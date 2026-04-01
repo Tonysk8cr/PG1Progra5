@@ -16,7 +16,9 @@ namespace EstudiantesApp
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 });
 
-            builder.Services.AddScoped<EstudianteService>();
+            // Singleton: una sola instancia compartida en toda la app
+            // Necesario para que el evento OnChange y el estado funcionen correctamente
+            builder.Services.AddSingleton<EstudianteService>();
 
             builder.Services.AddMauiBlazorWebView();
 

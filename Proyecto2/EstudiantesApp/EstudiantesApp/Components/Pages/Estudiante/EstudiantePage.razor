@@ -1,29 +1,103 @@
-﻿@page "/estudiante"
+@page "/estudiante"
 @inject NavigationManager navigationManager
 @using EstudiantesApp.Services
 @using EstudiantesAppWeb.Estudiante
 @inject EstudianteService estudianteService
+@implements IDisposable
 
 <h3>Estudiantes</h3>
 
 <div class="text-center">
-    <button type="button" class="btn btn-outline-success" @onclick="nuevo">+</button>
+    <button type="button" class="btn btn-outline-success" @onclick="nuevo">Nuevo</button>
 </div>
 
+<br />
+
+@if (estudiante != null && estudiante.Count > 0)
+{
+    <table class="table table-striped table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>#</th>
+                <th>Nombre Completo</th>
+                <th>Cédula</th>
+                <th>Carrera</th>
+                <th>Promedio</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var e in estudiante)
+            {
+                <tr>
+                    <td>@e.IdEstudiante</td>
+                    <td>@e.NombreCompleto</td>
+                    <td>@e.Cedula</td>
+                    <td>@e.Carrera</td>
+                    <td>@e.Promedio</td>
+                    <td>@(e.Activo == 1 ? "Activo" : "Inactivo")</td>
+                    <td>
+                        <button class="btn btn-sm btn-outline-primary"
+                                @onclick="() => editar(e.IdEstudiante)">Editar</button>
+                        <button class="btn btn-sm btn-outline-danger"
+                                @onclick="() => eliminar(e.IdEstudiante)">Eliminar</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No hay estudiantes registrados.</p>
+}
+
 @code {
+
+    public List<EstudianteListCLS> estudiante = new List<EstudianteListCLS>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Suscribirse al evento OnChange del servicio
+        estudianteService.OnChange += ActualizarLista;
+        estudiante = await estudianteService.GetAll();
+    }
+
+    public void Dispose()
+    {
+        // Desuscribirse para evitar memory leaks
+        estudianteService.OnChange -= ActualizarLista;
+    }
+
+    private async void ActualizarLista()
+    {
+        estudiante = await estudianteService.GetAll();
+        await InvokeAsync(StateHasChanged);
+    }
 
     private async Task nuevo()
     {
         navigationManager.NavigateTo("/estudiante/nuevo");
     }
 
-    public List<EstudianteListCLS> estudiante = new List<EstudianteListCLS>();
-
-    protected override async Task OnInitializedAsync()
+    private async Task editar(int id)
     {
-    
-        estudiante = await estudianteService.listarEstudiante();
+        navigationManager.NavigateTo($"/estudiante/editar/{id}");
+    }
 
+    private async Task eliminar(int id)
+    {
+        bool confirm = await App.Current.MainPage.DisplayAlert(
+            "Confirmar",
+            "¿Desea eliminar este estudiante?",
+            "Sí",
+            "No");
+
+        if (confirm)
+        {
+            await estudianteService.Delete(id);
+        }
     }
 
 }
