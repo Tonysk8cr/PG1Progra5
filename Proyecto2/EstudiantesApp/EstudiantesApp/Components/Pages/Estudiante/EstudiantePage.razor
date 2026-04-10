@@ -4,49 +4,34 @@
 @using EstudiantesAppWeb.Estudiante
 @inject EstudianteService estudianteService
 @implements IDisposable
+@using EstudiantesApp.Components.Shared
 
-<h3>Estudiantes</h3>
+<div class="d-flex justify-content-between align-items-center mb-3">
 
-<div class="text-center">
-    <button type="button" class="btn btn-outline-success" @onclick="nuevo">Nuevo</button>
+    <div>
+        <h3 class="mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-person-badge-fill" viewBox="0 0 16 16">
+                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm4.5 0a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zM8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6m5 2.755C12.146 12.825 10.623 12 8 12s-4.146.826-5 1.755V14a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1z" />
+            </svg>  Estudiantes
+        </h3>
+        <small class="text-muted">Lista de estudiantes</small>
+    </div>
+
+    <button class="btn btn-success shadow-sm"
+            @onclick="nuevo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
+        </svg>   Nuevo  
+    </button>
+
 </div>
-
-<br />
+<Buscador OnBuscar="Filtrar" />
 
 @if (estudiante != null && estudiante.Count > 0)
 {
-    <table class="table table-striped table-hover">
-        <thead class="table-dark">
-            <tr>
-                <th>#</th>
-                <th>Nombre Completo</th>
-                <th>Cédula</th>
-                <th>Carrera</th>
-                <th>Promedio</th>
-                <th>Estado</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var e in estudiante)
-            {
-                <tr>
-                    <td>@e.IdEstudiante</td>
-                    <td>@e.NombreCompleto</td>
-                    <td>@e.Cedula</td>
-                    <td>@e.Carrera</td>
-                    <td>@e.Promedio</td>
-                    <td>@(e.Activo == 1 ? "Activo" : "Inactivo")</td>
-                    <td>
-                        <button class="btn btn-sm btn-outline-primary"
-                                @onclick="() => editar(e.IdEstudiante)">Editar</button>
-                        <button class="btn btn-sm btn-outline-danger"
-                                @onclick="() => eliminar(e.IdEstudiante)">Eliminar</button>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+    <EstudianteTabla Lista="estudiante"
+                     OnEditar="editar"
+                     OnEliminar="eliminar" />
 }
 else
 {
@@ -57,11 +42,14 @@ else
 
     public List<EstudianteListCLS> estudiante = new List<EstudianteListCLS>();
 
+    List<EstudianteListCLS> listaOriginal = new();
+
     protected override async Task OnInitializedAsync()
     {
-        // Suscribirse al evento OnChange del servicio
         estudianteService.OnChange += ActualizarLista;
-        estudiante = await estudianteService.GetAll();
+
+        listaOriginal = await estudianteService.GetAll();
+        estudiante = listaOriginal;
     }
 
     public void Dispose()
@@ -72,7 +60,8 @@ else
 
     private async void ActualizarLista()
     {
-        estudiante = await estudianteService.GetAll();
+        listaOriginal = await estudianteService.GetAll();
+        estudiante = listaOriginal;
         await InvokeAsync(StateHasChanged);
     }
 
@@ -99,5 +88,21 @@ else
             await estudianteService.Delete(id);
         }
     }
+    private async Task Filtrar(string texto)
+    {
+        if (string.IsNullOrWhiteSpace(texto))
+        {
+            estudiante = listaOriginal;
+        }
+        else
+        {
+            estudiante = listaOriginal
+                .Where(e => e.NombreCompleto.ToLower().Contains(texto.ToLower()))
+                .ToList();
+        }
+
+        await InvokeAsync(StateHasChanged);
+    }
+
 
 }
