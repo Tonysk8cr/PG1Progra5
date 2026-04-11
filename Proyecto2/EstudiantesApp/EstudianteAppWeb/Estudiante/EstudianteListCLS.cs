@@ -28,7 +28,7 @@ namespace EstudiantesAppWeb.Estudiante
         public string Correo { get; set; }
 
         [Required(ErrorMessage = "El teléfono es obligatorio.")]
-        public int Telefono { get; set; }
+        public string Telefono { get; set; }
 
         [Required(ErrorMessage = "La fecha de nacimiento es obligatoria.")]
         public DateTime FechaNacimiento { get; set; } = DateTime.Today.AddYears(-18);

@@ -38,12 +38,12 @@ namespace EstudiantesApp.Services
                 FechaNacimiento = fechaNac,
                 Carrera         = "Ingenieria en Sistemas",
                 Nivel           = "Pregrado",
-                Promedio        = 8.5,
+                Promedio        = 6.5,
                 Activo          = 1
             });
             estudiantes.Add(new EstudianteListCLS
             {
-                IdEstudiante = 1,
+                IdEstudiante = 2,
                 Nombre = "Yudi",
                 PrimerApellido = "Fallas",
                 SegundoApellido = "Calderón",
@@ -58,7 +58,7 @@ namespace EstudiantesApp.Services
             });
             estudiantes.Add(new EstudianteListCLS
             {
-                IdEstudiante = 1,
+                IdEstudiante = 3,
                 Nombre = "Santi",
                 PrimerApellido = "Fonseca",
                 SegundoApellido = "Chinchilla",
@@ -73,7 +73,7 @@ namespace EstudiantesApp.Services
             });
             estudiantes.Add(new EstudianteListCLS
             {
-                IdEstudiante = 1,
+                IdEstudiante = 4,
                 Nombre = "Camila",
                 PrimerApellido = "Rodríguez",
                 SegundoApellido = "Coronado",
@@ -88,7 +88,7 @@ namespace EstudiantesApp.Services
             });
             estudiantes.Add(new EstudianteListCLS
             {
-                IdEstudiante = 1,
+                IdEstudiante = 5,
                 Nombre = "Anthony",
                 PrimerApellido = "Villalobos",
                 SegundoApellido = "Hidalgo",
@@ -118,7 +118,12 @@ namespace EstudiantesApp.Services
         // ── Insert ────────────────────────────────────────────────────────────
         public async Task Insert(EstudianteListCLS nuevo)
         {
-            nuevo.IdEstudiante = _nextId++;
+            int nuevoId = estudiantes.Count > 0
+                ? estudiantes.Max(e => e.IdEstudiante) + 1
+                : 1;
+
+            nuevo.IdEstudiante = nuevoId;
+
             estudiantes.Add(nuevo);
             NotificarCambio();
         }

@@ -1,0 +1,101 @@
+﻿@using EstudiantesAppWeb.Estudiante
+
+<EditForm Model="Modelo" OnValidSubmit="OnGuardar">
+
+    <div class="row g-3">
+
+        <div class="col-md-4">
+            <label>Nombre</label>
+            <input class="form-control" @bind="Modelo.Nombre" />
+        </div>
+
+        <div class="col-md-4">
+            <label>Primer Apellido</label>
+            <input class="form-control" @bind="Modelo.PrimerApellido" />
+        </div>
+
+        <div class="col-md-4">
+            <label>Segundo Apellido</label>
+            <input class="form-control" @bind="Modelo.SegundoApellido" />
+        </div>
+
+        <div class="col-md-4">
+            <label>Cédula</label>
+            <input class="form-control" @bind="Modelo.Cedula" />
+        </div>
+
+        <div class="col-md-4">
+            <label>Correo</label>
+            <input class="form-control" @bind="Modelo.Correo" />
+        </div>
+
+        <div class="col-md-4">
+            <label>Teléfono</label>
+            <input class="form-control" @bind="Modelo.Telefono" />
+        </div>
+
+        <div class="col-md-4">
+            <label>Fecha de Nacimiento</label>
+            <input type="date" class="form-control" @bind="Modelo.FechaNacimiento" />
+        </div>
+
+        <div class="col-md-4">
+            <label>Carrera</label>
+            <select class="form-select" @bind="Modelo.Carrera">
+                <option value="">-- Seleccione --</option>
+                <option value="Ingenieria en Sistemas">Ingenieria en Sistemas</option>
+                <option value="Ingenieria en Software">Ingenieria en Software</option>
+                <option value="Administracion de Empresas">Administracion de Empresas</option>
+                <option value="Contaduria">Contaduria</option>
+            </select>
+        </div>
+
+        <div class="col-md-4">
+            <label>Nivel</label>
+            <select class="form-select" @bind="Modelo.Nivel">
+                <option value="">-- Seleccione --</option>
+                <option value="Tecnico">Tecnico</option>
+                <option value="Pregrado">Pregrado</option>
+                <option value="Posgrado">Posgrado</option>
+            </select>
+        </div>
+
+        <div class="col-md-4">
+            <label>Promedio</label>
+            <input type="number" step="0.1" class="form-control" @bind="Modelo.Promedio" />
+        </div>
+
+        <div class="col-md-4">
+            <label>Estado</label>
+            <select class="form-select" @bind="Modelo.Activo">
+                <option value="1">Activo</option>
+                <option value="0">Inactivo</option>
+            </select>
+        </div>
+
+    </div>
+
+    <br />
+
+    <div class="text-center">
+        <button type="submit" class="btn btn-success">
+            @(Modelo.IdEstudiante > 0 ? "Actualizar" : "Guardar")
+        </button>
+
+        <button type="button" class="btn btn-danger" @onclick="OnCancelar">
+            Volver
+        </button>
+        <hr />
+    </div>
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+</EditForm>
+
+@code {
+    [Parameter] public EstudianteListCLS Modelo { get; set; }
+
+    [Parameter] public EventCallback OnGuardar { get; set; }
+
+    [Parameter] public EventCallback OnCancelar { get; set; }
+}
