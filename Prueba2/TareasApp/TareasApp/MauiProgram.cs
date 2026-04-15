@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging;
+using App.Core.Services;
 
 namespace TareasApp
 {
@@ -13,6 +14,9 @@ namespace TareasApp
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 });
+
+            // Registro del servicio como Singleton
+            builder.Services.AddSingleton<TareasService>();
 
             builder.Services.AddMauiBlazorWebView();
 

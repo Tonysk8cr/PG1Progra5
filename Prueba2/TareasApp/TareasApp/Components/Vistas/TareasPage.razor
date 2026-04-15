@@ -1,8 +1,50 @@
-﻿@page "/"
+@page "/"
+@using App.Core.Services
+@using App.Core.Tarea
+@inject TareasService tareasService
+@inject NavigationManager navigationManager
 
+<h3>Gestor de Tareas MAUI Blazor</h3>
 
-<h1>Gestor de Tareas MAUI Blazor</h1>
+<button class="btn btn-primary" @onclick="IrCrear">Crear Nueva Tarea</button>
+
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Descripción</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var tarea in tareas)
+        {
+            <tr>
+                <td>@tarea.Id</td>
+                <td>@tarea.Descripcion</td>
+                <td>
+                    <button class="btn btn-sm btn-outline-secondary"
+                            @onclick="() => navigationManager.NavigateTo($\"/detalle-tarea/{tarea.Id}\")">
+                        Ver Detalle
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
 
 @code {
+
+    List<Tarea> tareas = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Obtiene las tareas desde el servicio (no desde una API HTTP)
+        tareas = tareasService.ObtenerTodas();
+    }
+
+    void IrCrear()
+    {
+        navigationManager.NavigateTo("/crear-tarea");
+    }
 
 }
