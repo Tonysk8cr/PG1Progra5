@@ -4,27 +4,165 @@
 @inject TareasService tareasService
 @inject NavigationManager navigationManager
 
-<h3>Gestor de Tareas MAUI Blazor</h3>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-<button class="btn btn-primary" @onclick="IrCrear">Crear Nueva Tarea</button>
+<div class="tareas-container">
 
-<table class="table mt-3">
-    <thead>
-        <tr>
-            <th>Id</th>
-            <th>Descripción</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var tarea in tareas)
+    <div class="tareas-header">
+        <div>
+            <h1>📋 Gestor de Tareas</h1>
+            <p>MAUI Blazor App</p>
+        </div>
+        <button class="btn-nueva" @onclick="IrCrear">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+            </svg>
+            Crear Nueva Tarea
+        </button>
+    </div>
+
+    <div class="tareas-body">
+        @if (!tareas.Any())
         {
-            <tr>
-                <td>@tarea.Id</td>
-                <td>@tarea.Descripcion</td>
-            </tr>
+            <div class="empty-state">
+                <p>🗂️ No hay tareas aún</p>
+                <span>Crea tu primera tarea con el botón de arriba</span>
+            </div>
         }
-    </tbody>
-</table>
+        else
+        {
+            <table class="table tareas-table">
+                <thead>
+                    <tr>
+                        <th style="width: 80px">Id</th>
+                        <th>Descripción</th>
+                        <th style="width: 80px; text-align:center;">Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var tarea in tareas)
+                    {
+                        <tr>
+                            <td><span class="id-badge">@tarea.Id</span></td>
+                            <td>
+                                <i class="fa-regular fa-clipboard icono-tarea"></i>
+                                @tarea.Descripcion
+                            </td>
+                            <td style="text-align:center;">
+                                <i class="fa-regular fa-circle-check icono-estado"></i>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+
+</div>
+
+<style>
+    .tareas-container {
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 4px 24px rgba(5, 39, 103, 0.12);
+        max-width: 720px;
+        margin: 3rem auto;
+        overflow: hidden;
+    }
+
+    .tareas-header {
+        background: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+        color: white;
+        padding: 1.75rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+        .tareas-header h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 0 0.25rem;
+        }
+
+        .tareas-header p {
+            margin: 0;
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+
+    .btn-nueva {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        background: white;
+        color: rgb(5, 39, 103);
+        border: none;
+        border-radius: 10px;
+        padding: 0.6rem 1.1rem;
+        font-weight: 600;
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: opacity 0.2s;
+        white-space: nowrap;
+    }
+
+        .btn-nueva:hover {
+            opacity: 0.85;
+        }
+
+    .tareas-body {
+        padding: 1.75rem 2rem;
+    }
+
+    .tareas-table thead th {
+        color: rgb(5, 39, 103);
+        font-weight: 700;
+        border-bottom: 2px solid rgba(5, 39, 103, 0.2);
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    .tareas-table tbody tr:hover {
+        background: rgba(5, 39, 103, 0.04);
+    }
+
+    .id-badge {
+        background: rgba(5, 39, 103, 0.1);
+        color: rgb(5, 39, 103);
+        border-radius: 6px;
+        padding: 0.2rem 0.6rem;
+        font-weight: 700;
+        font-size: 0.85rem;
+    }
+
+    .icono-tarea {
+        color: #3a0647;
+        margin-right: 0.5rem;
+        font-size: 0.95rem;
+    }
+
+    .icono-estado {
+        color: rgb(5, 39, 103);
+        font-size: 1.1rem;
+    }
+
+    .empty-state {
+        text-align: center;
+        padding: 3rem 1rem;
+        color: #999;
+    }
+
+        .empty-state p {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .empty-state span {
+            font-size: 0.9rem;
+        }
+</style>
 
 @code {
 
