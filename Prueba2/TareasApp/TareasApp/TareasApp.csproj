@@ -73,7 +73,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Services\" />
+      <ProjectReference Include="..\App.Core\TareaWeb.csproj" />
     </ItemGroup>
 
 </Project>

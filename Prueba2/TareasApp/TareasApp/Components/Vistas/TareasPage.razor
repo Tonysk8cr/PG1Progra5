@@ -1,6 +1,6 @@
 @page "/"
-@using App.Core.Services
-@using App.Core.Tarea
+@using TareasApp.Services
+@using TareaWeb.Tarea
 @inject TareasService tareasService
 @inject NavigationManager navigationManager
 
@@ -20,11 +20,11 @@
         {
             <tr>
                 <td>@tarea.Id</td>
-                <td>@tarea.Descripcion</td>
-                <td>
                     <button class="btn btn-sm btn-outline-secondary"
                             @onclick="() => navigationManager.NavigateTo($\"/detalle-tarea/{tarea.Id}\")">
                         Ver Detalle
+                <td>@tarea.Descripcion</td>
+                <td>
                     </button>
                 </td>
             </tr>

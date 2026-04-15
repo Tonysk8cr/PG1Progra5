@@ -1,5 +1,6 @@
 using Microsoft.Extensions.Logging;
-using App.Core.Services;
+using TareasApp.Services;
+
 
 namespace TareasApp
 {
