@@ -20,13 +20,7 @@
         {
             <tr>
                 <td>@tarea.Id</td>
-                    <button class="btn btn-sm btn-outline-secondary"
-                            @onclick="() => navigationManager.NavigateTo($\"/detalle-tarea/{tarea.Id}\")">
-                        Ver Detalle
                 <td>@tarea.Descripcion</td>
-                <td>
-                    </button>
-                </td>
             </tr>
         }
     </tbody>
@@ -38,13 +32,12 @@
 
     protected override async Task OnInitializedAsync()
     {
-        // Obtiene las tareas desde el servicio (no desde una API HTTP)
         tareas = tareasService.ObtenerTodas();
     }
 
     void IrCrear()
     {
-        navigationManager.NavigateTo("/crear-tarea");
+        navigationManager.NavigateTo("/CrearTarea");
     }
 
 }
