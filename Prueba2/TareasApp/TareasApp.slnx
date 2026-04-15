@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="TareasApp/TareasApp.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+</Solution>
